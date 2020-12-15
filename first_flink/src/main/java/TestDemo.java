@@ -1,12 +1,6 @@
 import java.time.ZoneId;
 import java.util.Properties;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import org.apache.flink.api.common.functions.FilterFunction;
-import org.apache.flink.api.common.functions.FlatMapFunction;
-import org.apache.flink.api.common.functions.MapFunction;
-import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.fs.bucketing.BucketingSink;
@@ -21,8 +15,8 @@ public class TestDemo {
 
         // 添加Kafka数据源
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers", "192.168.1.252:9092");  // Kafka服务器IP和端
-        properties.setProperty("zookeeper.connect", "192.168.1.252:2181");  // Zookeeper服务器IP和端口
+        properties.setProperty("bootstrap.servers", "172.16.69.100:9092");  // Kafka服务器IP和端
+        properties.setProperty("zookeeper.connect", "172.16.69.100:2181");  // Zookeeper服务器IP和端口
         properties.setProperty("group.id", "test");
         FlinkKafkaConsumer<String> myConsumer = new FlinkKafkaConsumer<String>("test", new SimpleStringSchema(),
                 properties);
