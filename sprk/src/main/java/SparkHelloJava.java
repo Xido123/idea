@@ -8,8 +8,10 @@ import org.apache.spark.api.java.function.VoidFunction;
 import scala.Tuple2;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
+
+import java.util.Collections;
+import java.util.List;
+
 
 public class SparkHelloJava {
     public static void main(String[] args) {
@@ -19,66 +21,32 @@ public class SparkHelloJava {
 
         JavaRDD<String> stringJavaRDD = jsc.textFile("one.txt");
 
-        JavaRDD<String> filter = stringJavaRDD.filter(new Function<String, Boolean>() {
-            @Override
-            public Boolean call(String v1) throws Exception {
-                return v1.contains("h");
-            }
+        JavaRDD<String> filter = stringJavaRDD.filter((Function<String, Boolean>) v1 -> v1.contains("h"));
+
+        JavaRDD<String> flatMap =  filter.flatMap((FlatMapFunction<String, String>) s -> {
+            ArrayList<String> list = new ArrayList<>();
+            String[]s1 =  s.split(" ");
+            Collections.addAll(list, s1);
+            return list.iterator();
         });
 
-        JavaRDD<String> flatMap =  filter.flatMap(new FlatMapFunction<String, String>() {
-            @Override
-            public Iterator<String> call(String s) throws Exception {
-                ArrayList<String> list = new ArrayList<>();
-                String[]s1 =  s.split(" ");
-                for(String ss:s1){
-                    list.add(ss);
-                }
-                return list.iterator();
+        JavaRDD<Tuple2<String,Integer> > map =  flatMap.map((Function<String, Tuple2<String, Integer>>) v1 -> new Tuple2<>(v1,1));
+
+        JavaPairRDD<String,Iterable<Tuple2<String,Integer>>> groupBy =  map.groupBy((Function<Tuple2<String, Integer>, String>) v1 -> v1._1);
+
+        JavaPairRDD<String,Integer> wordCount =  groupBy.mapValues((Function<Iterable<Tuple2<String, Integer>>, Integer>) v1 -> {
+            int count = 0;
+            for (Tuple2<String, Integer> ignored : v1) {
+                count++;
             }
+            return count;
+
         });
 
-        JavaRDD<Tuple2<String,Integer> > map =  flatMap.map(new Function<String, Tuple2<String,Integer>>() {
-            @Override
-            public Tuple2<String,Integer> call(String v1) throws Exception {
-                return new Tuple2<>(v1,1);
-            }
-        });
+        wordCount.foreach((VoidFunction<Tuple2<String, Integer>>) System.out::println);
 
-        JavaPairRDD<String,Iterable<Tuple2<String,Integer>>> groupBy =  map.groupBy(new Function<Tuple2<String, Integer>, String>() {
-
-            @Override
-            public String call(Tuple2<String, Integer> v1) throws Exception {
-                return v1._1;
-            }
-        });
-
-        JavaPairRDD<String,Integer> wordCount =  groupBy.mapValues(new Function<Iterable<Tuple2<String, Integer>>, Integer>() {
-            @Override
-            public Integer call(Iterable<Tuple2<String, Integer>> v1) throws Exception {
-                Integer count = 0;
-//                Iterator<Tuple2<String, Integer>> iterator = v1.iterator();
-//
-//                while(iterator.hasNext()){
-//                    count++;
-//                }
-                for(Iterator<Tuple2<String,Integer>> iterator = v1.iterator();iterator.hasNext();){
-                    iterator.next();
-                    count++;
-                }
-                return count;
-
-            }
-        });
-
-        wordCount.foreach(new VoidFunction<Tuple2<String, Integer>>() {
-            @Override
-            public void call(Tuple2<String, Integer> stringIntegerTuple2) throws Exception {
-                System.err.println(stringIntegerTuple2);
-            }
-        });
-
-
+        List<Tuple2<String,Integer>> collection = wordCount.collect();
+        System.out.println(collection);
     }
 
 }
