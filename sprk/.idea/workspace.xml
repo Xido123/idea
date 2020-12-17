@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1030fe00-ad26-4f84-81a5-8eca2f938b24" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../spark/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/.idea/spark.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/one.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/src/main/scala/Main.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/target/classes/Main$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/target/classes/Main$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/target/classes/Main$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark/one/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spk/src/main/scala/spark.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spk/src/main/scala/spark.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_11_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/one.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprk.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SparkHelloJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MyPartitioner.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/SparkHelloWorld.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/spr.scala" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1lgZJm1qcOqiBkxxSbgIw7Mnqyy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.6226784" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SparkHelloWorld">
+    <configuration name="SparkHelloJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SparkHelloJava" />
+      <module name="sprk" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkHelloWorld" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SparkHelloWorld" />
+      <module name="sprk" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SparkHelloWorld" />
+        <item itemvalue="Application.SparkHelloJava" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1030fe00-ad26-4f84-81a5-8eca2f938b24" name="Default Changelist" comment="" />
+      <created>1608020628325</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608020628325</updated>
+      <workItem from="1608020629875" duration="14292000" />
+      <workItem from="1608076943358" duration="1657000" />
+      <workItem from="1608078625048" duration="174000" />
+      <workItem from="1608078819358" duration="118000" />
+      <workItem from="1608078958646" duration="617000" />
+      <workItem from="1608079596953" duration="446000" />
+      <workItem from="1608080059890" duration="168000" />
+      <workItem from="1608080244721" duration="426000" />
+      <workItem from="1608080688547" duration="1957000" />
+      <workItem from="1608101035160" duration="7962000" />
+      <workItem from="1608129361011" duration="603000" />
+      <workItem from="1608164260891" duration="153000" />
+    </task>
+    <task id="LOCAL-00001" summary="a">
+      <created>1608020754650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608020754650</updated>
+    </task>
+    <task id="LOCAL-00002" summary="a">
+      <created>1608025277008</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608025277008</updated>
+    </task>
+    <task id="LOCAL-00003" summary="a">
+      <created>1608046689753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608046689753</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.1/spark-core_2.11-2.1.1-sources.jar!/org/apache/spark/rdd/HadoopRDD.scala</url>
+          <line>201</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/SparkHelloWorld.scala</url>
+          <line>16</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0-sources.jar!/org/apache/hadoop/mapred/FileInputFormat.java</url>
+          <line>272</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
